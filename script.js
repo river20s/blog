@@ -1,3 +1,4 @@
+/** 
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
 
@@ -10,3 +11,4 @@ menuIcon.addEventListener('mouseenter', function() {
 navLinks.addEventListener('mouseleave', function() {
     navLinks.classList.remove('active');
 });
+*/
