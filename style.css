@@ -1,20 +1,47 @@
 @font-face {
-    font-family: 'GabiaGosran-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2409-2@1.0/GabiaGosran-Regular.woff2') format('woff2');
+    font-family: 'Eulyoo1945';
+    src: url('fonts/Eulyoo1945-Regular.eot'); /* IE9 compatibility */
+    src: url('fonts/Eulyoo1945-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Eulyoo1945-Regular.woff2') format('woff2'),
+         url('fonts/Eulyoo1945-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Eulyoo1945';
+    src: url('fonts/Eulyoo1945-SemiBold.eot'); /* IE9 compatibility */
+    src: url('fonts/Eulyoo1945-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Eulyoo1945-SemiBold.woff2') format('woff2'),
+         url('fonts/Eulyoo1945-SemiBold.woff') format('woff');
+    font-weight: 600; /* SemiBold weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 body {
-    font-family: GabiaGosran-Regular, serif;
+    min-width: 400;
+    margin: 0;
+    padding: 0;
+    font-family: Eulyoo1945, serif;
     line-height: 1.6;
-    background-color: tan;
-    color: #232323;
+    background-color: #ffffff;
+    color: #000000;
+}
+header, footer, nav, h1, h2, h3, h4, h5, h6, .menu, .navbar, button, input, select {
+    font-family: 'Pretendard', sans-serif;
 }
 
 header {
-    background-color: tan;
-    color:#232323;
+    background-color: #ffffff;
+    color:#000000;
     padding: 1rem;
     text-align: left;
 }
@@ -27,19 +54,20 @@ header nav ul li {
     margin: 0 15px;
 }
 header nav ul li a {
-    color: #232323;
+    color: #000000;
     text-decoration: none;
 }
 
 a {
-    text-decoration: node;
-    border-bottom: 1.8px dashed #232323;
+    text-decoration: none;
+    color:#000000;
+    border-bottom: 1.8px dashed #000000;
     transition: .1s background ease-out;
     background: transparent;
 }
 a:hover {
     text-decoration: none;
-    background: #ffff00;
+    background: #ffff58;
 }
 a:active {
     color: #000000;
@@ -53,9 +81,47 @@ a:visited {
 }
 
 article {
-    background-color: tan;
+    background-color: #ffffff;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 2rem;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    overflow-x: auto;
+    white-space: normal;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0.5rem 4rem;
+    border: 0;
+    font-weight: 999;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+@media (min-width: 400px) {
+    body {
+        min-width: 400px;
+    }
 }
