@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'GabiaGosran-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2409-2@1.0/GabiaGosran-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: GabiaGosran-Regular, serif;
+    line-height: 1.6;
+    background-color: tan;
+    color: #232323;
+}
+
+header {
+    background-color: tan;
+    color:#232323;
+    padding: 1rem;
+    text-align: left;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #232323;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: node;
+    border-bottom: 1.8px dashed #232323;
+    transition: .1s background ease-out;
+    background: transparent;
+}
+a:hover {
+    text-decoration: none;
+    background: #ffff00;
+}
+a:active {
+    color: #000000;
+}
+a:visited {
+    text-decoration: node;
+    color: #771f94;
+    border-bottom: 1.8px dashed #771f94;
+    transition: .1s background ease-out;
+    background: transparent;
+}
+
+article {
+    background-color: tan;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
