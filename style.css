@@ -54,32 +54,36 @@ body, html {
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
     font-weight: bold;
+    margin-top: 1rem;
     margin-right: 1rem;
     transition: text-decoration 0.1s ease, color 0.1 ease;
 
 }
 .menu-icon:hover {
     text-decoration: underline;
-    color:#c00000;
+    color:#ff0000;
 }
 .menu {
     position: absolute;
     top: 60px;
-    right: 0px;
-    background-color: #c00000;
+    right: 2rem;
+    background-color: #000000;
     padding: 0.3rem;
     border: 1px solid #000000;
     display: none;
     flex-direction: column;
+    width: 150px;
 }
 .menu a {
     font-family: 'Pretendard', sans-serif;
     font-size: 18px;
-    color:#000000;
+    color:#ffffff;
     text-decoration: none;
+    padding: 0.3rem;
 }
 .menu a:hover {
-    color:aqua;
+    color:#ff0000;
+    text-decoration: underline;
 }
 
 
