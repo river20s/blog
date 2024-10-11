@@ -14,5 +14,4 @@ function closeMenu() {
     }
 }
 
-// 메뉴 영역에서 마우스를 벗어나면 메뉴 닫기
-document.getElementById("menu").addEventListener("mouseleave", closeMenu);
+
