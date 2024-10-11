@@ -55,7 +55,12 @@ body, html {
     font-size: 18px;
     font-weight: bold;
     margin-right: 1rem;
+    transition: text-decoration 0.1s ease, color 0.1 ease;
 
+}
+.menu-icon:hover {
+    text-decoration: underline;
+    color:#c00000;
 }
 .menu {
     position: absolute;
